@@ -9,9 +9,7 @@ Usage:
 
 choose as option:
 1 - check all ports
-
 2 - manual check
-
 >
 
 type in 1 to check all 65535 ports for ipv4 address
@@ -21,8 +19,8 @@ type in 2 to check for single port
 >1
 
 target ip
-
 >192.168.0.1 (example)
+
 Port 53 is open
 Port 45555 is open
 Port 80 is open
