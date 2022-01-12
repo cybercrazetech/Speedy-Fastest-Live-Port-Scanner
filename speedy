@@ -1,0 +1,639 @@
+#!/usr/bin/env python3
+import socket
+import threading
+
+check=[]
+confirmed=[]
+threads=[]
+
+def One():
+    for i in range(1,771):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+        if i%100==0:print(str(int(i*100/771))+r"% complete")
+
+
+def Two():
+    for i in range(772,1542):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Three():
+    for i in range(1543,2313):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Four():
+    for i in range(2314,3084):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Five():
+    for i in range(3085,3855):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Six():
+    for i in range(3856,4626):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seven():
+    for i in range(4627,5397):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eight():
+    for i in range(5398,6168):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Nine():
+    for i in range(6169,6939):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Ten():
+    for i in range(6940,7710):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eleven():
+    for i in range(7711,8481):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twelve():
+    for i in range(8482,9252):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirteen():
+    for i in range(9253,10023):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fourteen():
+    for i in range(10024,10794):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fifteen():
+    for i in range(10795,11565):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixteen():
+    for i in range(11566,12336):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventeen():
+    for i in range(12337,13107):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eighteen():
+    for i in range(13108,13878):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Nineteen():
+    for i in range(13879,14649):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twenty():
+    for i in range(14650,15420):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentyone():
+    for i in range(15421,16191):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentytwo():
+    for i in range(16192,16962):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentythree():
+    for i in range(16963,17733):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentyfour():
+    for i in range(17734,18504):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentyfive():
+    for i in range(18505,19275):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentysix():
+    for i in range(19276,20046):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentyseven():
+    for i in range(20047,20817):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentyeight():
+    for i in range(20818,21588):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Twentynine():
+    for i in range(21589,22359):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirty():
+    for i in range(22360,23130):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtyone():
+    for i in range(23131,23901):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtytwo():
+    for i in range(23902,24672):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtythree():
+    for i in range(24673,25443):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtyfour():
+    for i in range(25444,26214):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtyfive():
+    for i in range(26215,26985):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtysix():
+    for i in range(26986,27756):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtyseven():
+    for i in range(27757,28527):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtyeight():
+    for i in range(28528,29298):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Thirtynine():
+    for i in range(29299,30069):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Forty():
+    for i in range(30070,30840):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortyone():
+    for i in range(30841,31611):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortytwo():
+    for i in range(31612,32382):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortythree():
+    for i in range(32383,33153):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortyfour():
+    for i in range(33154,33924):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortyfive():
+    for i in range(33925,34695):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortysix():
+    for i in range(34696,35466):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortyseven():
+    for i in range(35467,36237):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortyeight():
+    for i in range(36238,37008):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fortynine():
+    for i in range(37009,37779):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fifty():
+    for i in range(37780,38550):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftyone():
+    for i in range(38551,39321):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftytwo():
+    for i in range(39322,40092):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftythree():
+    for i in range(40093,40863):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftyfour():
+    for i in range(40864,41634):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftyfive():
+    for i in range(41635,42405):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftysix():
+    for i in range(42406,43176):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftyseven():
+    for i in range(43177,43947):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftyeight():
+    for i in range(43948,44718):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Fiftynine():
+    for i in range(44719,45489):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixty():
+    for i in range(45490,46260):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtyone():
+    for i in range(46261,47031):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtytwo():
+    for i in range(47032,47802):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtythree():
+    for i in range(47803,48573):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtyfour():
+    for i in range(48574,49344):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtyfive():
+    for i in range(49345,50115):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtysix():
+    for i in range(50116,50886):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtyseven():
+    for i in range(50887,51657):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtyeight():
+    for i in range(51658,52428):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Sixtynine():
+    for i in range(52429,53199):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventy():
+    for i in range(53200,53970):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventyone():
+    for i in range(53971,54741):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventytwo():
+    for i in range(54742,55512):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventythree():
+    for i in range(55513,56283):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventyfour():
+    for i in range(56284,57054):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventyfive():
+    for i in range(57055,57825):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventysix():
+    for i in range(57826,58596):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventyseven():
+    for i in range(58597,59367):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventyeight():
+    for i in range(59368,60138):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Seventynine():
+    for i in range(60139,60909):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eighty():
+    for i in range(60910,61680):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eightyone():
+    for i in range(61681,62451):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eightytwo():
+    for i in range(62452,63222):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eightythree():
+    for i in range(63223,63993):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eightyfour():
+    for i in range(63994,64764):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def Eightyfive():
+    for i in range(64765,65535):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex((ip, i)) == 0:print("Port",str(i),"is open");check.append(i)
+
+
+def checkport(ip,port):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex((ip, int(port))) == 0
+
+
+choice=input(
+'''choose as option:
+1 - check all ports
+2 - manual check
+>'''
+)
+
+ip=input(
+'''
+target ip
+>''')
+
+if choice=='1':
+    threads.append(threading.Thread(target=One))
+    threads.append(threading.Thread(target=Two))
+    threads.append(threading.Thread(target=Three))
+    threads.append(threading.Thread(target=Four))
+    threads.append(threading.Thread(target=Five))
+    threads.append(threading.Thread(target=Six))
+    threads.append(threading.Thread(target=Seven))
+    threads.append(threading.Thread(target=Eight))
+    threads.append(threading.Thread(target=Nine))
+    threads.append(threading.Thread(target=Ten))
+    threads.append(threading.Thread(target=Eleven))
+    threads.append(threading.Thread(target=Twelve))
+    threads.append(threading.Thread(target=Thirteen))
+    threads.append(threading.Thread(target=Fourteen))
+    threads.append(threading.Thread(target=Fifteen))
+    threads.append(threading.Thread(target=Sixteen))
+    threads.append(threading.Thread(target=Seventeen))
+    threads.append(threading.Thread(target=Eighteen))
+    threads.append(threading.Thread(target=Nineteen))
+    threads.append(threading.Thread(target=Twenty))
+    threads.append(threading.Thread(target=Twentyone))
+    threads.append(threading.Thread(target=Twentytwo))
+    threads.append(threading.Thread(target=Twentythree))
+    threads.append(threading.Thread(target=Twentyfour))
+    threads.append(threading.Thread(target=Twentyfive))
+    threads.append(threading.Thread(target=Twentysix))
+    threads.append(threading.Thread(target=Twentyseven))
+    threads.append(threading.Thread(target=Twentyeight))
+    threads.append(threading.Thread(target=Twentynine))
+    threads.append(threading.Thread(target=Thirty))
+    threads.append(threading.Thread(target=Thirtyone))
+    threads.append(threading.Thread(target=Thirtytwo))
+    threads.append(threading.Thread(target=Thirtythree))
+    threads.append(threading.Thread(target=Thirtyfour))
+    threads.append(threading.Thread(target=Thirtyfive))
+    threads.append(threading.Thread(target=Thirtysix))
+    threads.append(threading.Thread(target=Thirtyseven))
+    threads.append(threading.Thread(target=Thirtyeight))
+    threads.append(threading.Thread(target=Thirtynine))
+    threads.append(threading.Thread(target=Forty))
+    threads.append(threading.Thread(target=Fortyone))
+    threads.append(threading.Thread(target=Fortytwo))
+    threads.append(threading.Thread(target=Fortythree))
+    threads.append(threading.Thread(target=Fortyfour))
+    threads.append(threading.Thread(target=Fortyfive))
+    threads.append(threading.Thread(target=Fortysix))
+    threads.append(threading.Thread(target=Fortyseven))
+    threads.append(threading.Thread(target=Fortyeight))
+    threads.append(threading.Thread(target=Fortynine))
+    threads.append(threading.Thread(target=Fifty))
+    threads.append(threading.Thread(target=Fiftyone))
+    threads.append(threading.Thread(target=Fiftytwo))
+    threads.append(threading.Thread(target=Fiftythree))
+    threads.append(threading.Thread(target=Fiftyfour))
+    threads.append(threading.Thread(target=Fiftyfive))
+    threads.append(threading.Thread(target=Fiftysix))
+    threads.append(threading.Thread(target=Fiftyseven))
+    threads.append(threading.Thread(target=Fiftyeight))
+    threads.append(threading.Thread(target=Fiftynine))
+    threads.append(threading.Thread(target=Sixty))
+    threads.append(threading.Thread(target=Sixtyone))
+    threads.append(threading.Thread(target=Sixtytwo))
+    threads.append(threading.Thread(target=Sixtythree))
+    threads.append(threading.Thread(target=Sixtyfour))
+    threads.append(threading.Thread(target=Sixtyfive))
+    threads.append(threading.Thread(target=Sixtysix))
+    threads.append(threading.Thread(target=Sixtyseven))
+    threads.append(threading.Thread(target=Sixtyeight))
+    threads.append(threading.Thread(target=Sixtynine))
+    threads.append(threading.Thread(target=Seventy))
+    threads.append(threading.Thread(target=Seventyone))
+    threads.append(threading.Thread(target=Seventytwo))
+    threads.append(threading.Thread(target=Seventythree))
+    threads.append(threading.Thread(target=Seventyfour))
+    threads.append(threading.Thread(target=Seventyfive))
+    threads.append(threading.Thread(target=Seventysix))
+    threads.append(threading.Thread(target=Seventyseven))
+    threads.append(threading.Thread(target=Seventyeight))
+    threads.append(threading.Thread(target=Seventynine))
+    threads.append(threading.Thread(target=Eighty))
+    threads.append(threading.Thread(target=Eightyone))
+    threads.append(threading.Thread(target=Eightytwo))
+    threads.append(threading.Thread(target=Eightythree))
+    threads.append(threading.Thread(target=Eightyfour))
+    threads.append(threading.Thread(target=Eightyfive))
+    for thread in threads:thread.start()
+    for thread in threads:thread.join()
+    if check!=[]:
+        print("#Checking for false positives...")
+        for port in check:
+            if checkport(ip,port):confirmed.append(str(port))
+        if confirmed!=[]:print("Port",','.join(confirmed),"are open!")
+        else:print("No Open Port Found!")
+    else:print("No Open Port Found!")
+elif choice=='2':
+    port=input(
+'''
+check port
+>''')
+    if checkport(ip,port):print("Port",port,"is open")
+    else:print("Port",port,"is not open")
+else:print("Unknown input. Please try again.")
