@@ -58,4 +58,4 @@ Usage
 
 Contributing
 ------------
-Feel free to give suggestions or help to contribute to this tool.
+Feel free to give any suggestions or help to contribute to this tool.
