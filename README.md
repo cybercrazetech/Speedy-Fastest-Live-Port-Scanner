@@ -2,14 +2,14 @@
 Faster and more stable port scanner than nmap or rustscan to scan for all open ports
 This is created to shorten the time of detecting open ports for CTF
 place speedy binary in /usr/bin
-
+'''
 Usage:
 ./speedy
 
 choose as option:
 1 - check all ports
 2 - manual check
-'>'
+>
 
 type in 1 to check all 65535 ports for ipv4 address
 type in 2 to check for single port
@@ -40,3 +40,4 @@ check port
 Port 80 is open
 
 Feel free to give suggestions or help to contribute to this tool.
+'''
