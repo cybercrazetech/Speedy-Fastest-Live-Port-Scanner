@@ -9,7 +9,7 @@ Usage:
 choose as option:
 1 - check all ports
 2 - manual check
->
+'>'
 
 type in 1 to check all 65535 ports for ipv4 address
 type in 2 to check for single port
