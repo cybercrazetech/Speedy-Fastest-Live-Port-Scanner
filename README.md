@@ -41,19 +41,11 @@ Usage
     target ip
     >192.168.0.1 (example)
 
-    Port 53 is open
-    Port 45555 is open
-    Port 80 is open
-    12% complete
-    25% complete
-    38% complete
-    51% complete
-    Port 443 is open
-    64% complete
-    77% complete
-    90% complete
+    #Ports Detected:
+    1716
+    100%|█████████████████████████████████████████████████████| 771/771 [00:27<00:00, 28.10it/s]
     #Checking for false positives...
-    Port 53,45555,80,443 are open!
+    Ports 1716 are open!
 
     >2
     target ip
