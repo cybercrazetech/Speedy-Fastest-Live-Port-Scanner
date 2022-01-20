@@ -11,7 +11,7 @@ There's a recheck after every all-port-scan to ensure stability
 
 Installing
 ----------
-edit the usr/bin/env to suit the python version in your machine. Ideally, this tool works only for python3
+edit the /usr/bin/env to suit the python version in your machine. Ideally, this tool works only for python3
 
     nano ./speedy
     #!/usr/bin/env python3 <-- edit this
